@@ -33,7 +33,7 @@ function Mnda() {
 ```    
 
 ```Noreenshjo10 = Mnda()```    
-This attempts to read a registry key, likely to find the path to powershell.exe or wscript.exe. The key structure ``` HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\PowerShell.exe\ ``` is a common path used to locate the PowerShell executable on the system. The use of recon (derived from the initial math) is to reconstruct the string “PowerShell” or similar system utility names, again thwarting simple string matching.    
+This attempts to read a registry key, likely to find the path to powershell.exe or wscript.exe. The key structure ``` HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\PowerShell.exe\ ``` is a common path used to locate the PowerShell executable on the system. The use of recon (derived from the initial math) is to reconstruct the string "PowerShell" or similar system utility names, again thwarting simple string matching.    
 
 •	Checking for Running Windows (Anti-Analysis):    
 ```
@@ -62,8 +62,9 @@ Reation and execution of secondary payloads via PowerShell, registry-based persi
 <img width="767" height="369" alt="image" src="https://github.com/user-attachments/assets/a356922e-7f1b-4c31-af63-619bc57b115b" />            
 
 - Suspicious File Creation in User Profile: ```C:\Users\Administrator\AppData\Roaming\Biocen.Def``` and ```C:\Users\Administrator\AppData\Roaming\Chel```            
-- Execution of PowerShell Payloads: The sample launches PowerShell with a command that reads and executes content from the file ```C:\Users\Administrator\AppData\Roaming\Chel```, using dynamic code construction. Additionally runs ```C:\Users\Administrator\AppData\Local\Temp\__PSScriptPolicyTest_mdmkmtkc.kp2.ps1```                 
-- Extensive System and File Enumeration: The sample performs broad file and directory enumeration (e.g., via ```FindFirstFileExW``` and ```FindNextFileW``` on system and user directories), mapping to MITRE technique - T1083. Typical of reconnaissance or preparation for further malicious actions.            
+- Execution of PowerShell Payloads: The sample launches PowerShell with a command that reads and executes content from the file ```C:\Users\Administrator\AppData\Roaming\Chel```, using dynamic code construction.
+- Additionally runs ```C:\Users\Administrator\AppData\Local\Temp\__PSScriptPolicyTest_mdmkmtkc.kp2.ps1```                 
+- Extensive System and File Enumeration: The sample performs broad file and directory enumeration (e.g., via ```FindFirstFileExW``` and ```FindNextFileW``` on system and user directories). Typical of reconnaissance or preparation for further malicious actions.            
 - Cryptographic API Abuse: There is heavy use of cryptographic APIs ```CryptAcquireContextA, CryptImportKey, CryptExportKey, CryptCreateHash, CryptHashData```            
 - Process Injection and Manipulation Techniques: API calls such as ```NtQueueApcThread``` and ```NtOpenProcess``` with high privileges attempts at process injection or manipulation            
 - Potential Keylogging or Input Capture: Frequent use of GetKeyState and installation of window hooks ```SetWindowsHookExW with WH_CALLWNDPROC and WH_GETMESSAGE```            
