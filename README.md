@@ -101,3 +101,20 @@ __Pieces of malware__
 - Keeping your Endpoint Security up-to-date and use best security practices (policies).            
 - For advanced security, traceability and investigation - use EDR/XDR solutions.
 - Cyber Security services - MDR/SOC.   
+
+
+# Not related to this specific malware or research            
+
+__Here's more interesting ways how malware evades various AV's__   
+
+- Malware dev's using stolen digital code signing certificates:            
+
+<img width="1535" height="607" alt="certsz" src="https://github.com/user-attachments/assets/85772a62-2a5b-4dbd-81f5-bcf1ba3b09a2" />        
+
+- Disabling specific AV's the smart way:        
+
+<img width="1175" height="757" alt="avast" src="https://github.com/user-attachments/assets/e700cee8-508c-4aab-a586-16ad4818d5fa" />            
+
+- Usage of vulnerable kernel drivers or loading unsigned kernel drivers to disable or blind EDR/XDR for example: runs ```bcdedit /set testsigning on```, which enables Windows Test Mode, allowing the system to load test-signed drivers that would normally be blocked.            
+
+And much more...
