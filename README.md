@@ -19,12 +19,12 @@ __ESET Threat Intelligence, APT__ - these specific CloudEyE campaigns are curren
 
 # Malware analysis from code perspective (few examples)    
 
-**Malware is distributed as spearphishing email.    
-*Code is heavily obfuscated JavaScript.    
-*The code is designed to execute a series of anti-analysis checks, retrieve data from the system, decode a malicious payload, and finally execute it.    
-*The initial segments define numerous seemingly random variables and perform pointless mathematical operations (like the while(Bobsledsbandagethallo174<236) loop, which just initializes a variable without affecting execution flow significantly). This is classic junk code intended to waste the time of an automated sandbox or confuse a human analyst.    
+- Malware is distributed as spearphishing email.    
+- Code is heavily obfuscated JavaScript.    
+- The code is designed to execute a series of anti-analysis checks, retrieve data from the system, decode a malicious payload, and finally execute it.    
+- The initial segments define numerous seemingly random variables and perform pointless mathematical operations (like the while(Bobsledsbandagethallo174<236) loop, which just initializes a variable without affecting execution flow significantly). This is classic junk code intended to waste the time of an automated sandbox or confuse a human analyst.    
 
-•	Reading Registry (Persistence/Location):    
+- Reading Registry (Persistence/Location):    
 ```
 function Mnda() {
     return Ured.RegRead(sludrehove+"\\SOFTWARE\\Mic"+recon+"osoft\\Windows\\CurrentVersion\\App Paths\\Powe"+recon+"Shell.exe\\");
