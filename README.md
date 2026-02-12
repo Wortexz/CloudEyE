@@ -6,7 +6,8 @@ CloudEyE is written in Visual Basic and primarily uses legitimate servers like O
 
 CloudEyE’s main stage, the shellcode, is known to implement many anti-analysis, anti-debugging tactics and the code is heavily obfuscated.    
 
-In 2026 we saw more and more campaigns in Lithuania. Initial access - Spearphishing email message with a malicious attachment (all campaigns targeted SME).    
+In 2026 we saw more and more campaigns in Lithuania.        
+__Initial access - Spearphishing email message with a malicious attachment (all campaigns targeted SME).__                
 
 # The interesting things    
 
