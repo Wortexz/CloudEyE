@@ -57,7 +57,13 @@ C&C Server is not very known to the security vendors (2026-02-05 11:08:15 UTC):
 
 Reation and execution of secondary payloads via PowerShell, registry-based persistence, cryptographic API abuse, process injection techniques, and potential keylogging behavior. The combination of these behaviors, especially the dynamic PowerShell execution and C2 communication = characteristic of modern fileless malware.        
 
-- Malicious Network Communication: The sample initiates outbound HTTP communication to hxxp://104.168.115[.]74/Osteo.cur            
+- Malicious Network Communication: The sample initiates outbound HTTP communication to hxxp://104.168.115[.]74/Osteo.cur
+
+<img width="524" height="151" alt="Screenshot 2026-02-12 211619" src="https://github.com/user-attachments/assets/11816180-39da-471e-9c32-ec0add661768" />            
+
+Exit node: NZ
+IIS Windows Server and open RDP.     
+Windows Server 2022            
 
 <img width="767" height="369" alt="image" src="https://github.com/user-attachments/assets/a356922e-7f1b-4c31-af63-619bc57b115b" />            
 
