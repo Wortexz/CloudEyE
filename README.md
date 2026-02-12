@@ -61,7 +61,7 @@ Reation and execution of secondary payloads via PowerShell, registry-based persi
 
 <img width="524" height="151" alt="Screenshot 2026-02-12 211619" src="https://github.com/user-attachments/assets/11816180-39da-471e-9c32-ec0add661768" />            
 
-Exit node: NZ
+Exit node: NZ            
 IIS Windows Server and open RDP.     
 Windows Server 2022            
 
