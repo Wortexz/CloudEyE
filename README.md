@@ -88,4 +88,5 @@ __Pieces of malware__
 # How to stay safe
 - Cyber Security training - The easiest way to prevent malware from entering your systems is to make sure that employees don’t download any malicious files in the first place.            
 - Keeping your Endpoint Security up-to-date and use best security practices (policies).            
-- For advanced security, traceability and investigation - use edr/xdr solutions.                    
+- For advanced security, traceability and investigation - use EDR/XDR solutions.
+- Cyber Security services - MDR/SOC.   
