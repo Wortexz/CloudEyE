@@ -53,8 +53,10 @@ __End-to-end chain:__
 C&C Server is not very known to the security vendors:            
 
 __2026-02-05 08:52:27 UTC__            
+
 <img width="1624" height="525" alt="Screenshot 2026-02-12 212325" src="https://github.com/user-attachments/assets/5884a61a-2cc2-439a-95b1-f626bc3e125e" />        
-__2026-02-05 11:08:15 UTC)__            
+__2026-02-05 11:08:15 UTC)__           
+
 <img width="1312" height="462" alt="Screenshot 2026-02-12 161641" src="https://github.com/user-attachments/assets/8c98e3c2-4433-4f93-bb5b-95a67d56a214" />      
 
 Reation and execution of secondary payloads via PowerShell, registry-based persistence, cryptographic API abuse, process injection techniques, and potential keylogging behavior. The combination of these behaviors, especially the dynamic PowerShell execution and C2 communication = characteristic of modern fileless malware.        
